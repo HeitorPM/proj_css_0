@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border; /*totaliza o height e width contabilizando com o padding, normalmente a conta é width + padding + border = actual width of an element
+ */
+
+}
+
+
+:root {
+    --ff-heading: 'Epilogue', sans-serif;
+    --ff-texting: 'Open sans', sans-serif;
+    
+    --hue: 250;
+    --bg-primary: hsla(var(--hue), 22%, 20%);
+    --fc-primary: hsla(var(--hue), 0%, 100%);
+    --fc-secondary: hsla(var(--hue), 50%, 80%);
+    --fc-secondary-dark: hsla(var(--hue), 100%, 11%, 1);
+
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+}
+
+
+body{
+    font-family: var(--ff-texting);
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+    font-size: var(--fs-body);
+}
+
+/*div dentro do body que esta pegando tudo do body*/
+.page{
+    max-width: 33rem;
+    margin: 0 auto; 
+}
+
+img{
+    width: 100%;
+}
